@@ -11,7 +11,7 @@ body{
 .container{
     width: 90%;
     max-width: 1000px;
-    background: #2a4d4d; /* Borrar */
+    background: #398181; /* Borrar */
     margin: auto;
     overflow: hidden;
 }
