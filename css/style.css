@@ -11,7 +11,7 @@ body{
 .container{
     width: 90%;
     max-width: 1000px;
-    background: #9eacad; /* Borrar */
+    /* background: #9eacad; */
     margin: auto;
     overflow: hidden;
 }
@@ -19,7 +19,7 @@ body{
 /* ------------- HEADER ------------- */
 
 header{
-    background: url(../images/bg.jpg) #616060; 
+    background: url(../images/bg.jpg) #000; 
     background-repeat: no-repeat;
     background-position: center;
     max-height: 600px;
@@ -41,7 +41,7 @@ header .menu a {
 }
 
 header .menu a:hover{
-    border-bottom: 2px solid aqua;
+    border-bottom: 2px solid orangered;
 }
 
 header .container-text {
@@ -54,7 +54,8 @@ header .container-text {
 
 header .container-text .text {
     border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
     display: inline-block;
     text-align: center;
     padding: 20px 60px;
@@ -62,7 +63,7 @@ header .container-text .text {
 
 header .container-text .text h1,
 header .container-text .text h2 {
-    color: #fff;
+    color: orangered;
     font-weight: 400;
     margin: 0;
 }
@@ -76,4 +77,256 @@ header .container-text .text .name{
 header .container-text .text .profession{
     font-size: 25px;
     line-height: 25px;
+    color: darkorange;
+    text-shadow:;
 }
+
+/* MAIN */
+
+.main .container{
+    overflow: visible;
+}
+
+.main .about{
+    text-align: center;
+}
+
+.main .about .photo{
+    margin-top: -60px;
+}
+
+.main .about .photo img {
+    vertical-align: top;
+    border-radius: 50%;
+    border: 3px solid rgba(250, 120, 69, 0.4);
+}
+
+.main .about .text {
+    color: #5a5a5a;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+.main .about .text .title{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: orangered;
+    text-align: center;
+}
+
+.main .about .text .bold{
+    color: orange ;
+    text-decoration: underline;
+}
+
+/* ----- ----- PORTAFOLIO ----- ----- */
+
+.main .portfolio{
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+.main .portfolio .container{
+    overflow: hidden;
+}
+
+.main .portfolio .title{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: orangered;
+    text-align: center;
+}
+
+.main .portfolio .container-portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .portfolio .container-portfolio .single-portfolio {
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.main .portfolio .container-portfolio .single-portfolio .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .portfolio .container-portfolio .single-portfolio .thumb img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.main .portfolio .container-portfolio .single-portfolio .description {
+    text-align: center;
+}
+
+.main .portfolio .container-portfolio .single-portfolio .name {
+    font-weight: 500;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.main .portfolio .container-portfolio .single-portfolio .category {
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+/* ----- ----- CONTACT ----- ---- */
+
+footer .contact {
+    padding: 60px 0;
+}
+
+footer .contact .title {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: orangered;
+    text-align: center;
+}
+
+footer .contact .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contact .form input[type="text"],
+footer .contact .form input[type="email"],
+footer .contact .form textarea {
+    border: 2px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+
+footer .contact .form input[type="text"],
+footer .contact .form input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .contact .form textarea {
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+footer .contact .form .button {
+    margin: auto;
+    background: orange;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+footer .contact .form .button:hover {
+    background: orangered;
+}
+
+footer .contact .form input[type="text"]:focus,
+footer .contact .form input[type="email"]:focus,
+footer .contact .form textarea:focus{
+    border: 2px solid orange;
+    outline: none;
+}
+
+
+/* --------- ------ SOCIALMEDIA  ------- --------- */
+
+footer .socialmedia {
+    background: #1e2b38;
+    padding: 60px 0;
+}
+
+footer .socialmedia .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .socialmedia a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .socialmedia .twitter:hover {
+    background: #1da1f2 ;
+}
+
+footer .socialmedia .facebook:hover {
+    background: #1877f2 ;
+}
+
+footer .socialmedia .linkedin:hover {
+    background: #0077b5 ;
+}
+
+footer .socialmedia .youtube:hover {
+    background: #ff0000 ;
+}
+
+footer .socialmedia .github:hover {
+    background: #bd2c00 ;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+    }
+
+    .main .portfolio .container-portfolio .single-portfolio {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    header .container-text .text .name{
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    header .container-text .text .profession{
+        font-size: 18px;
+    }
+
+
+    footer .socialmedia .container {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
+
+
+
+
+
