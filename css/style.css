@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    background: #a6d6d8; /* Borrar */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ------------- HEADER ------------- */
+
+header{
+    background: url(../images/bg.jpg) #616060; 
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 600px;
+}
+
+header .menu {
+    margin: 40px 0;
+    text-align: right;
+}
+
+header .menu a {
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Se agrega aunque este transparente para que se reserve el espacio, con ello cuando se aplica el efecto de hover no se crean saltos */
+    font-size: 1em;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid aqua;
+}
+
+header .container-text {
+    display: flex;
+    margin: 190px 0;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-content: center;
+}
+
+header .container-text .text {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .container-text .text h1,
+header .container-text .text h2 {
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+}
+
+header .container-text .text .name{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .container-text .text .profession{
+    font-size: 25px;
+    line-height: 25px;
+}
